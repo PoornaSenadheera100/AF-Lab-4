@@ -7,6 +7,8 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// ===================================== 1st Part - Begin ============================================================
+
 app.get('/', (req, res) => {
  res.send('Hello World!');
 });
@@ -24,6 +26,9 @@ app.post('/api/user', (req, res) => {
     const user = { id: 3, name };
     res.send(user);
 });
+
+
+// ================================= 1st Part - End =====================================================
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
