@@ -20,7 +20,7 @@ app.get('/api/user', (req, res) => {
     ];
     res.send(users);
 });
-
+    
 app.post('/api/user', (req, res) => {
     const { name } = req.body;
     const user = { id: 3, name };
